@@ -12,6 +12,13 @@ sections:
   templates:
   - post
 - type: directory
+  path: content/author
+  label: Author
+  create: documents
+  match: "*.md"
+  templates:
+  - author
+- type: directory
   path: data
   label: Data
   create: documents
@@ -19,13 +26,6 @@ sections:
   new_doc_ext: yml
   templates:
   - tools
-- type: directory
-  path: content/author
-  label: Author
-  create: documents
-  match: "*.md"
-  templates:
-  - author
 - type: document
   path: content/contact/_index.md
   label: Contact
